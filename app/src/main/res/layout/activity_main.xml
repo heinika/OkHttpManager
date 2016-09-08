@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_down_load"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="cn.fingersoft.imag.okhttpmanager.MainActivity">
+
+
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/tablayout_download"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/TabLayoutStyle"
+        />
+
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager_download"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+
+</LinearLayout>
+

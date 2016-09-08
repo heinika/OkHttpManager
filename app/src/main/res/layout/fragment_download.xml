@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              >
+    <LinearLayout
+        android:id="@+id/linear_tool"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <Button
+            android:id="@+id/button_add_task"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="add Task"
+            />
+        <Button
+            android:id="@+id/button_change_download_path"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="设置下载目录"
+            />
+        <TextView
+            android:id="@+id/textview_download_path"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            />
+    </LinearLayout>
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_download"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/linear_tool"
+        >
+
+    </android.support.v7.widget.RecyclerView>
+
+    <Button
+        android:id="@+id/button_delete_task"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="delete"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="-50dp"
+        />
+</RelativeLayout>
